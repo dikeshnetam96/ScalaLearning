@@ -1,6 +1,6 @@
 package scalaBasics
 
-object L2_Expressions extends App{
+object L3_Expressions extends App{
 val x = 1+2
   println(x)
   println(2+3*4) // Math Expressions

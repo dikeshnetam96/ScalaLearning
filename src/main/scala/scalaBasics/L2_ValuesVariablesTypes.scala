@@ -1,6 +1,6 @@
 package scalaBasics
 
-object L1_ValuesVariablesTypes extends App {  // extends helps to run in ide.... #IDK
+object L2_ValuesVariablesTypes extends App {  // extends helps to run in ide.... #IDK
 
   // val type variable is immutable
   private val x = "Hello!!"

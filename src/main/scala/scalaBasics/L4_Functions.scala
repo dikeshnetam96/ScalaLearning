@@ -1,6 +1,6 @@
 package scalaBasics
 
-object L3_Functions extends App {
+object L4_Functions extends App {
 
   // defination function_name(prameters ) : return type = Expression
   def aFunction(a: String, b: Int): String = { // function is for string concatenation
