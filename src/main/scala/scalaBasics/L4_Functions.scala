@@ -11,7 +11,7 @@ object L4_Functions extends App {
   def aParameterlessFunction(): Int = 42
 
   println(aParameterlessFunction())
-  println(aParameterlessFunction) // a function without parameter can be also called with name only...
+  println(aParameterlessFunction()) // a function without parameter can be also called with name only...
 
 
 

@@ -114,7 +114,7 @@ object L11_OOBasics_Exercise extends App {
   println("---------------------------------------------------------------------")
   val counter = new Counter(6)
   println(counter.inc.inc.count )
-  counter.inc.inc.print
+  counter.inc.inc.print()
 
 
 }

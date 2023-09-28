@@ -50,7 +50,7 @@ class Cons1[+A](h: A, t: MyList1[A]) extends MyList1[A] {
 
   override def printElements: String =
     if (t.isEmpty1) "" + h
-    else h + " " + t.printElements
+    else { ""+h+ " "+t.printElements}
 }
 
 object ListTest extends App {
