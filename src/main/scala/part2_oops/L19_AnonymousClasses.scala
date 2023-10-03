@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L19_AnonymousClasses extends App {
 

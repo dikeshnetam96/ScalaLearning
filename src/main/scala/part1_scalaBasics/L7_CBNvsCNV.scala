@@ -1,4 +1,4 @@
-package scalaBasics
+package part1_scalaBasics
 
 object L7_CBNvsCNV extends App {
 

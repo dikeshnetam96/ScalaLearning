@@ -1,4 +1,4 @@
-package scalaBasics
+package part1_scalaBasics
 
 object L2_ValuesVariablesTypes extends App {  // extends helps to run in ide.... #IDK
 

@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L16_AbstractDataType {
   abstract class Animal {

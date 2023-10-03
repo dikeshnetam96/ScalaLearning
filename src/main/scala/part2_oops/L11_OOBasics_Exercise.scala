@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L11_OOBasics_Exercise extends App {
 

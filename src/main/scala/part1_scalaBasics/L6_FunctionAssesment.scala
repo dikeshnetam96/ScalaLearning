@@ -1,4 +1,4 @@
-package scalaBasics
+package part1_scalaBasics
 
 object L6_FunctionAssesment extends App{
 /*

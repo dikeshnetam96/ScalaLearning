@@ -1,4 +1,4 @@
-package scalaBasics
+package part1_scalaBasics
 
 object L3_Expressions extends App{
 val x = 1+2

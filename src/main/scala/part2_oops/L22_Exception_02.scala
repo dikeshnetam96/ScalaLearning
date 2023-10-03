@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L22_Exception_02 extends App {
 

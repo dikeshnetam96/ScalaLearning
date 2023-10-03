@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L15_InheritanceAndTraits extends App {
 

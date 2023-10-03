@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 object L14_ObjectScala extends App{
 

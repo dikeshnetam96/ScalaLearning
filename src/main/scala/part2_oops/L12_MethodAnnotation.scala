@@ -1,4 +1,4 @@
-package oops
+package part2_oops
 
 import scala.language.postfixOps
 
