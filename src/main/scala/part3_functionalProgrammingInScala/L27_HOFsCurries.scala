@@ -60,6 +60,4 @@ object L27_HOFsCurries extends App {
   println(standardFormate(Math.PI))
   println(preciseFormate(Math.PI))
 
-
-
 }
