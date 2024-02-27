@@ -32,6 +32,5 @@ object L26_AnonymousFunction extends App {
    */
 
   val superAdd = (x: Int) => (y: Int) => x + y
-  println(superAdd(3)(4))
-
+  val superAdder = (x:Int) => (y:Int)=> x+y
 }

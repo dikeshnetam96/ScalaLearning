@@ -14,7 +14,7 @@ object L29_FlatMapFileterFor extends App {
   println(list.filter(_ % 2 == 0))
 
   // filter map
-  val toPair = (x: Int) => List(x, x + 1)
+  val toPair = (x: Int) => List(x, x + 1, x + 2)
   println(list.flatMap(toPair))
 
   // print all combination between two lists
@@ -62,8 +62,8 @@ object L29_FlatMapFileterFor extends App {
   println(forCombinationsWithFilter)
 
   // Syntax Overload
-  val newTest = list.map{
-    x => x*2
+  val newTest = list.map {
+    x => x * 2
   }
   println(newTest.foreach(println))
 
@@ -79,6 +79,6 @@ object L29_FlatMapFileterFor extends App {
       -Map, flatmap, filter
    */
 
-  }
+}
 
 

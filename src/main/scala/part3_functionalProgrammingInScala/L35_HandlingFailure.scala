@@ -16,7 +16,7 @@ object L35_HandlingFailure extends App {
   // here try caught the Exception and wrapped it up with Failure. Try Object via the apply method
   val potentialFailure = Try(unsafeMethod())
   println(potentialFailure)
-
+  println("----------------------------------------------")
   // syntax sugar
   val anotherPotentialFailure = Try {
     // code that might throw

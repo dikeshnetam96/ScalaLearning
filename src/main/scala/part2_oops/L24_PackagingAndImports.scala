@@ -30,5 +30,4 @@ object L24_PackagingAndImports extends App{
   Scala.Preddef - println, ???
 
  */
-
 }

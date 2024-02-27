@@ -71,6 +71,7 @@ object L36_PatternMatching extends App {
       sum(Number(2), Number(3),Number(4)) => 2+3+4
       Prod(Sum(Number(2),Number(1)),Number(3)) = (2+1)*3
       Sum(Prod(Number(2),Number(1)),Number(3)) = 2* 1 + 3
+
    */
 
   trait Expr

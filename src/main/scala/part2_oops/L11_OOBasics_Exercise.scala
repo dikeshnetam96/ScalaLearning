@@ -19,16 +19,16 @@ object L11_OOBasics_Exercise extends App {
   - receives an int value
   - method current count
   - method to increment/decrement => new Counter
-  - overload inc/dec to receive an amountt
+  - overload inc/dec to receive an amount
 
   */
 
- /*
- Here We have created a Writer class with parameterized constructor, which will take 3 values
-  */
+  /*
+  Here We have created a Writer class with parameterized constructor, which will take 3 values
+   */
   class Writer(fname: String, lname: String, year: Int) {
 
-   // This method will return author's complete name
+    // This method will return author's complete name
     def fullName(): String = {
       return fname + " " + lname
     }
@@ -58,17 +58,20 @@ object L11_OOBasics_Exercise extends App {
     var value = 0;
 
     def inputValue(temp: Int): Boolean = {
-      value = temp; true
+      value = temp;
+      true
     }
 
     def currentCount(): Int = value
 
     def incrementVal(): Int = {
-      value = value + 1; value
+      value = value + 1;
+      value
     }
 
     def decrementVal(): Int = {
-      value = value - 1; value
+      value = value - 1;
+      value
     }
 
     def incrementVal(amount: Int): Int = {
@@ -90,30 +93,32 @@ object L11_OOBasics_Exercise extends App {
       println("decremention ")
       new Counter(count - 1)
     }
+
     def print() = println(count)
   }
-  val writer = new Writer("Yann","Martel",1996)
+
+  val writer = new Writer("Yann", "Martel", 1996)
   println(writer.fullName())
 
-  val novel = new Novel("Life of Pi",2001,writer)
+  val novel = new Novel("Life of Pi", 2001, writer)
   println(s"year of book released ${novel.yor}")
-  println("name of author is same : "+novel.isWrittenBy("Yann Martel"))
-  println("changing birth year of author : "+novel.copy(2002))
+  println("name of author is same : " + novel.isWrittenBy("Yann Martel"))
+  println("changing birth year of author : " + novel.copy(2002))
   println(novel.authorAge())
   val newObj = novel.copyObj(2002)
-  println("new time is : "+newObj.yor+" and the new object is :"+newObj)
+  println("new time is : " + newObj.yor + " and the new object is :" + newObj)
   println("---------------------------------------------------------------")
 
   val cnt = new Count
-  println("inserting a new value "+cnt.inputValue(5))
-  println("incrementing value : "+cnt.incrementVal())
-  println("decrementing value : "+cnt.decrementVal())
-  println("incrementing operation with input value : "+cnt.incrementVal(500))
-  println("decrementing operation with input value : "+cnt.decrementVal(cnt.incrementVal(500)))
+  println("inserting a new value " + cnt.inputValue(5))
+  println("incrementing value : " + cnt.incrementVal())
+  println("decrementing value : " + cnt.decrementVal())
+  println("incrementing operation with input value : " + cnt.incrementVal(500))
+  println("decrementing operation with input value : " + cnt.decrementVal(cnt.incrementVal(500)))
 
   println("---------------------------------------------------------------------")
   val counter = new Counter(6)
-  println(counter.inc.inc.count )
+  println(counter.inc.inc.count)
   counter.inc.inc.print()
 
 

@@ -11,6 +11,14 @@ object L19_AnonymousClasses extends App {
     val funnyAnimal : Animal = new Animal {
       override def eat: Unit = println("testing text for anonymous class")
     }
+
+    An anonymous class in Scala is a class that is defined without a name,
+    typically for the purpose of creating a single instance of that class inline.
+    Anonymous classes are often used to provide concrete implementations for traits or
+    abstract classes directly at the point of instantiation, without the need to define
+    a separate named class. They are created using the new keyword followed by the declaration
+    of the trait or abstract class, along with the implementation of any abstract methods.
+    Anonymous classes are concise and are particularly useful when a temporary and one-off implementation is needed.
   */
 
   class AnonymousClasses$$anon$1 extends Animal {

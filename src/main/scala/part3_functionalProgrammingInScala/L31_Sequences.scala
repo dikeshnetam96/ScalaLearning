@@ -10,6 +10,7 @@ object L31_Sequences extends App {
   // sequences : Sequence is an iterable collection of class Iterable
   val aSequnce = Seq(1, 5, 2, 3, 4) // this sequence is actually list, apply factory method which create sub class of Sequence
   println(aSequnce)
+  println(aSequnce.getClass)
   println(aSequnce.reverse)
   println(aSequnce(2))
   println(aSequnce ++ Seq(4, 5, 6)) // concading two list into one
@@ -57,8 +58,12 @@ object L31_Sequences extends App {
   // Arrays
   val numebrs = Array(1, 2, 3, 4)
   println(numebrs.mkString("-"))
-  val treeElements = Array.ofDim[Int](3) // creating array with defined locations.
+  val treeElements = Array.ofDim[Int](3) // creating array with defined locations with default value of 0 for integer kind of values.
   treeElements.foreach(println)
+  treeElements(1) = 5
+  println("new line printing................")
+  treeElements.foreach(println)
+
 
   // Mutation
   numebrs(2) = 0 // syntax sugar for numbers.update(2,0)

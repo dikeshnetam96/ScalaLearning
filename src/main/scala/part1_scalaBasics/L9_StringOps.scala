@@ -20,7 +20,7 @@ object L9_StringOps extends App{
   // It will compare 'str' to 'temp'
   println(str.compareTo(temp))
 
-  // It will comcat the 'str' string with 'temp'
+  // It will concat the 'str' string with 'temp'
   println(str.concat(temp))
 
   // It will replace letter 'l' with 'p' of 'str' string

@@ -29,13 +29,11 @@ object L15_InheritanceAndTraits extends App {
     override val creatureType: String = "croc"
     override def eat : Unit = println("Hii")
     override def eat(animal: Animal) : Unit = println(s"I'm a croc and I'm eating ${animal.creatureType}")
-
-
   }
+
   val dog = new Dog
   val croc = new Crocodile
   croc.eat(dog)
-
 
   // traits vs abstract classes
   // traits do not have constructor parameters  // trait Carnivor(name:String) --> This is wrong

@@ -7,12 +7,12 @@ object L32_TuplesAndMaps_Excercise extends App {
 
   /*
         What would happen if I had two original entries "Jim"-> 555 and "JIM" -> 900?
-        Overly simplified social netwrok based on maps
+        Overly simplified social network based on maps
         Person = String
         - add a person to the networks
         - remove a person
         - friend(mutual)
-        - unfried
+        - unfriend
 
         - number of friends of a person
         - person with most friends

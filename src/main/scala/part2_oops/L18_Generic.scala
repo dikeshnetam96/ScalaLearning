@@ -62,23 +62,32 @@ object ListTest extends App {
 }
 
 /*
-In Scala, variance is a feature that helps define the relationships between types when dealing with inheritance and subtyping. It's a way to specify whether a generic type parameter should be allowed to vary in a specific direction (either covariant, contravariant, or invariant) when dealing with subtypes.
+In Scala, variance is a feature that helps define the relationships between types when dealing with inheritance and subtyping.
+It's a way to specify whether a generic type parameter should be allowed to vary in a specific direction (either covariant,
+contravariant, or invariant) when dealing with subtypes.
 
 Here's a brief explanation of the different types of variance:
 
-Covariant (+): If you declare a type parameter as covariant, it means that you can substitute a more specific type for a less specific one. For example, if B is a subtype of A, you can use C[B] in place of C[A]. This is denoted by adding a + before the type parameter, like class C[+A].
+Covariant (+): If you declare a type parameter as covariant, it means that you can substitute a more specific type for a less specific one.
+For example, if B is a subtype of A, you can use C[B] in place of C[A]. This is denoted by adding a + before the type parameter, like class C[+A].
 
-Contravariant (-): If you declare a type parameter as contravariant, it means that you can substitute a less specific type for a more specific one. For example, if B is a subtype of A, you can use C[A] in place of C[B]. This is denoted by adding a - before the type parameter, like class C[-A].
+Contravariant (-): If you declare a type parameter as contravariant, it means that you can substitute a less specific type for a more specific one.
+For example, if B is a subtype of A, you can use C[A] in place of C[B]. This is denoted by adding a - before the type parameter, like class C[-A].
 
-Invariant (default): If you don't specify any variance annotation, the type parameter is invariant. In this case, you cannot substitute one type for another, regardless of their subtyping relationship.
+Invariant (default): If you don't specify any variance annotation, the type parameter is invariant. In this case, you cannot substitute one type
+for another, regardless of their subtyping relationship.
 
-Variance is important because it helps ensure type safety in situations where you have generic classes or functions that deal with different types and their relationships. By specifying the variance correctly, you can prevent type errors and make your code more flexible and reusable.
+Variance is important because it helps ensure type safety in situations where you have generic classes or functions that deal with different
+types and their relationships. By specifying the variance correctly, you can prevent type errors and make your code more flexible and reusable.
 
 Here's why variance is required:
 
-Safety: By indicating how type parameters should vary with respect to subtyping, you can catch potential type errors at compile-time. This prevents runtime errors and enhances the safety of your code.
+Safety: By indicating how type parameters should vary with respect to subtyping, you can catch potential type errors at compile-time.
+This prevents runtime errors and enhances the safety of your code.
 
-Flexibility: Variance allows you to create more flexible and reusable code. It lets you design classes and functions that work with a wider range of types without compromising type safety.
+Flexibility: Variance allows you to create more flexible and reusable code. It lets you design classes and functions that work with a
+wider range of types without compromising type safety.
 
-Interoperability: Variance annotations help ensure that your code can interact with libraries and APIs that use subtyping relationships correctly. It ensures that your code integrates smoothly with other parts of your application or external libraries.
+Interoperability: Variance annotations help ensure that your code can interact with libraries and APIs that use subtyping relationships correctly.
+It ensures that your code integrates smoothly with other parts of your application or external libraries.
  */
