@@ -3,7 +3,6 @@ package part2_oops
 abstract class MyList {
   /*
        Need to create a linked list...
-
        head = first element of the list
        tail = remainder of the list
        isEmpty = is this list empty

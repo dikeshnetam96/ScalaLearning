@@ -11,7 +11,7 @@ object L27_HOFsCurries extends App {
    */
 
   // Make sure to replace the implementation with your actual logic according to your requirements.
-  // val superFunction : (Int,(String, (Int => Boolean))=>Int) => (Int,Int) = ???
+  // val superFunction> : (Int,(String, (Int => Boolean))=>Int) => (Int,Int) = ???
   val superFunction: (Int, (String, (Int => Boolean)) => Int) => (Int, Int) = null // changed this to null to avoid NotImplementedError
 
   // Higher Order Function (HOF)

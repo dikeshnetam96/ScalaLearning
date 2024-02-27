@@ -15,13 +15,14 @@ object L23_Exceptions extends App {
     if (withException) throw new RuntimeException("No int for you!")
     else 42
   }
-// Now potentialFail is of type Int here, because getInt function return int and catch also return int.
-   val potentialFail = try {
+
+  // Now potentialFail is of type Int here, because getInt function return int and catch also return int.
+  val potentialFail = try {
     // code that might throw
     getInt(false)
   }
   catch {
-    case e : RuntimeException => 43//println("Cought a Runtime Exception")
+    case e: RuntimeException => 43 //println("Cought a Runtime Exception")
   }
   finally {
     // code that will execute NO MATTER WHAT
@@ -33,16 +34,17 @@ object L23_Exceptions extends App {
 
   println(potentialFail)
 
-/*  def double: Int =>  Int = (x) => x * 2
-  val test = double(5)
-  println(test)*/
+  /*  def double: Int =>  Int = (x) => x * 2
+    val test = double(5)
+    println(test)*/
 
 
   // 3. How to define your own Exception
   // (Exceptions : Exceptions are instances of special classes which are derived from exception or errors)
 
   class MyException extends Exception
-    val exception = new MyException()
+
+  val exception = new MyException()
 
   throw exception
 

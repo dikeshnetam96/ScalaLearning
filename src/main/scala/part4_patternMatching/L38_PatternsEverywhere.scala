@@ -25,12 +25,13 @@ object L38_PatternsEverywhere extends App {
   }
    */
 
-
   // big idea #2
   val list = List(1, 2, 3, 4)
   val evenOnes = for {
     x <- list if x % 2 == 0
   } yield 10 * x
+
+  println(list+ " " + evenOnes)
 
   // generators are also based on Pattern Matching
   val tuples = List((1, 2), (3, 4))

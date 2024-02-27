@@ -11,6 +11,7 @@ object L21_CaseClasses extends App {
   // 2. sensible toString
   println(jim.toString) // or we can write as println(jim)
   println(jim)
+  println("new line added .. "+jim.getClass)
 
   // 3. Equals and hashCode implemented Out Of The Box
   val jim2 = new Person("Jim", 34)
@@ -52,5 +53,6 @@ object L21_CaseClasses extends App {
   
   case objects
    */
+
 
 }

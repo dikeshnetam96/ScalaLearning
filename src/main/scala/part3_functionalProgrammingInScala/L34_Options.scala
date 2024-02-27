@@ -64,6 +64,7 @@ object L34_Options extends App {
     else None
   }
 
+  // Assignment -
   // try to establish a connection, if so- print the connect method
 
   /*
@@ -123,6 +124,7 @@ Difference between below two methods are  : for each will print data only when t
   } yield {
     con.connect
   }
+  println("below this : ")
   forConnectionStatus.foreach(println)
   //  println(forConnectionStatus)
 }

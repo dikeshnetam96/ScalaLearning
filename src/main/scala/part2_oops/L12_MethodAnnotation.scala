@@ -9,6 +9,7 @@ object L12_MethodAnnotation extends App {
     def hangOutWith(person : Person) : String = s"${this.name} is hanging out with ${person.name}"
     def +(str : String): String = s" how was ${str}" // we can define methods using operators as well
     def unary_! : String = s"${name} what the heck"
+
     def isAlive : Boolean = true
     def apply() : String = s"Hi $name i know your favorite movie is $favoriteMovie"
     def check() : String = s"hi buddy"
